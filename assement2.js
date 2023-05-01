@@ -14,27 +14,31 @@ const books = [
 let listBooks=[];
 function getAvailableBooks(){
 for(let i=0;i<books.length;i++){
-    if(i[isAvailable]===true){
+    if(i[books.isAvailable]===true){
         listBooks.push(i);
 
     }
     return listBooks;
 }
-console.log(listBooks);
+
 
 }
+console.log(listBooks);
 getAvailableBooks();
-
-
-
-
 
 // 2. Create a function getBooksByAuthor that takes an author's name as an argument and
 // returns an array of all books by that author.
 
 function getBooksByAuthor(name){
-
+for(let i =0; i<books.length;i++)
+if(i[books.author]===name){
+sameAuthor.push(i);
 }
+return sameAuthor
+}
+let sameAuthor=[];
+console.log(sameAuthor);
+getBooksByAuthor();
 
 
 // 3. Create a function addNewBook that takes a book object as an argument and adds it
@@ -42,11 +46,12 @@ function getBooksByAuthor(name){
 // publicationYear, and isAvailable).
 function addNewBook(book){
 
-    book:
-    title="";
-    author="Abyss";
+book:    
+    title="Abyss";
+    author="Erick Jr."
     publicationYear=2010;
     isAvailable=True;
+    
     
 
 }
